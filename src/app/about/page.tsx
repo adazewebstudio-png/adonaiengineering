@@ -82,10 +82,10 @@ export default function AboutPage() {
                                     Built on Execution,<br />
                                     <span className="text-primary">Not Theory</span>
                                 </h2>
-                                <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+                                <p className="text-lg text-muted-foreground dark:text-white leading-relaxed mb-6">
                                     <strong>Adonai Engineering and Construction Ltd</strong> is a professional engineering and construction company delivering disciplined, high-quality construction solutions across buildings, estate developments, and supporting infrastructure.
                                 </p>
-                                <p className="text-muted-foreground leading-relaxed">
+                                <p className="text-muted-foreground dark:text-white leading-relaxed">
                                     Our experience is grounded in direct project delivery, site supervision, and coordinated construction management — shaping a culture of discipline, accountability, and technical integrity.
                                 </p>
                             </div>
@@ -93,11 +93,11 @@ export default function AboutPage() {
                                 <div className="grid grid-cols-2 gap-4">
                                     <div className="bg-zinc-100 dark:bg-zinc-900 p-8 rounded-sm border border-border">
                                         <span className="text-4xl font-black text-primary block mb-2">2021</span>
-                                        <span className="text-sm font-bold uppercase tracking-widest text-muted-foreground">Established</span>
+                                        <span className="text-sm font-bold uppercase tracking-widest text-muted-foreground dark:text-white">Established</span>
                                     </div>
                                     <div className="bg-zinc-100 dark:bg-zinc-900 p-8 rounded-sm border border-border">
                                         <span className="text-4xl font-black text-primary block mb-2">GH</span>
-                                        <span className="text-sm font-bold uppercase tracking-widest text-muted-foreground">Ghana Based</span>
+                                        <span className="text-sm font-bold uppercase tracking-widest text-muted-foreground dark:text-white">Ghana Based</span>
                                     </div>
                                     <div className="col-span-2 bg-primary text-white p-8 rounded-sm">
                                         <span className="text-lg font-bold block mb-2">Independent Execution</span>
@@ -113,8 +113,8 @@ export default function AboutPage() {
                 <section className="py-16 bg-zinc-50 dark:bg-zinc-900 border-y border-border">
                     <div className="container px-4 md:px-6">
                         <div className="max-w-4xl mx-auto text-center">
-                            <p className="text-xs font-bold uppercase tracking-widest text-muted-foreground mb-4">Group Context</p>
-                            <p className="text-xl md:text-2xl text-foreground leading-relaxed">
+                            <p className="text-xs font-bold uppercase tracking-widest text-muted-foreground dark:text-white mb-4">Group Context</p>
+                            <p className="text-xl md:text-2xl text-foreground dark:text-white leading-relaxed">
                                 Adonai Engineering and Construction Ltd is a subsidiary of <strong className="text-primary">Adonai Estate Limited</strong>. Through this relationship, we have gained extensive experience executing construction works within a broader real estate development ecosystem.
                             </p>
                         </div>
@@ -165,7 +165,7 @@ export default function AboutPage() {
                                         <value.icon className="h-7 w-7 text-primary group-hover:text-white transition-colors" />
                                     </div>
                                     <h4 className="text-lg font-bold uppercase tracking-tight mb-3">{value.title}</h4>
-                                    <p className="text-sm text-muted-foreground leading-relaxed">{value.description}</p>
+                                    <p className="text-sm text-muted-foreground dark:text-white leading-relaxed">{value.description}</p>
                                 </div>
                             ))}
                         </div>
@@ -223,7 +223,7 @@ export default function AboutPage() {
                                         </div>
                                         <h3 className="text-xl font-bold uppercase tracking-tight mb-1">{manager.name}</h3>
                                         <p className="text-xs font-bold uppercase tracking-widest text-primary mb-4">{manager.role}</p>
-                                        <p className="text-sm text-muted-foreground leading-relaxed flex-grow">
+                                        <p className="text-sm text-muted-foreground dark:text-white leading-relaxed flex-grow">
                                             {manager.bio}
                                         </p>
                                     </div>
@@ -259,13 +259,13 @@ export default function AboutPage() {
                 <section className="py-8 bg-zinc-100 dark:bg-zinc-900 border-t border-border">
                     <div className="container px-4 md:px-6">
                         <div className="flex flex-wrap justify-center gap-8 text-sm">
-                            <Link href="/capabilities" className="inline-flex items-center gap-2 font-bold uppercase tracking-widest text-muted-foreground hover:text-primary transition-colors">
+                            <Link href="/capabilities" className="inline-flex items-center gap-2 font-bold uppercase tracking-widest text-muted-foreground dark:text-white hover:text-primary transition-colors">
                                 <TrendingUp className="h-4 w-4" /> How We Deliver
                             </Link>
-                            <Link href="/services" className="inline-flex items-center gap-2 font-bold uppercase tracking-widest text-muted-foreground hover:text-primary transition-colors">
+                            <Link href="/services" className="inline-flex items-center gap-2 font-bold uppercase tracking-widest text-muted-foreground dark:text-white hover:text-primary transition-colors">
                                 <Building2 className="h-4 w-4" /> Our Services
                             </Link>
-                            <Link href="/markets-geography" className="inline-flex items-center gap-2 font-bold uppercase tracking-widest text-muted-foreground hover:text-primary transition-colors">
+                            <Link href="/markets-geography" className="inline-flex items-center gap-2 font-bold uppercase tracking-widest text-muted-foreground dark:text-white hover:text-primary transition-colors">
                                 <Target className="h-4 w-4" /> Markets & Geography
                             </Link>
                         </div>

@@ -15,7 +15,7 @@ export default function TermsOfUsePage() {
 
             <div className="container py-24 px-4 md:px-6">
                 <div className="max-w-4xl mx-auto prose prose-slate dark:prose-invert prose-headings:uppercase prose-headings:font-black prose-headings:tracking-tight">
-                    <p className="text-sm text-muted-foreground mb-8 text-center italic">
+                    <p className="text-sm text-muted-foreground dark:text-white mb-8 text-center italic">
                         Effective Date: January 24, 2026
                     </p>
 

@@ -58,7 +58,7 @@ export function Header() {
                             <span className="text-xs sm:text-sm md:text-base font-black tracking-tight uppercase text-primary">
                                 Adonai Engineering
                             </span>
-                            <span className="text-[10px] md:text-xs font-bold tracking-widest uppercase text-muted-foreground">
+                            <span className="text-[10px] md:text-xs font-bold tracking-widest uppercase text-zinc-600 dark:text-zinc-400">
                                 & Construction Ltd
                             </span>
                         </div>
@@ -72,7 +72,7 @@ export function Header() {
                                 href={link.href}
                                 className={cn(
                                     "text-sm font-medium uppercase tracking-widest hover:text-primary transition-colors",
-                                    pathname === link.href ? "text-primary font-bold" : "text-muted-foreground"
+                                    pathname === link.href ? "text-primary font-bold" : "text-zinc-700 dark:text-zinc-300"
                                 )}
                             >
                                 {link.name}

@@ -116,7 +116,7 @@ export default function CapabilitiesPage() {
                             <h2 className="text-3xl md:text-4xl font-black uppercase tracking-tight mb-6">
                                 Grounded in <span className="text-primary">Real Execution</span>
                             </h2>
-                            <p className="text-xl text-muted-foreground leading-relaxed">
+                            <p className="text-xl text-muted-foreground dark:text-white leading-relaxed">
                                 Our capability is measured by how projects are actually delivered on site — through people, systems, and structured coordination. We do not rely on theory or broad claims.
                             </p>
                         </div>
@@ -129,7 +129,7 @@ export default function CapabilitiesPage() {
                         <div className="text-center mb-16">
                             <h2 className="text-3xl md:text-4xl font-black uppercase tracking-tight mb-4">Our Delivery Model</h2>
                             <div className="h-1.5 w-20 bg-primary mx-auto mb-6" />
-                            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+                            <p className="text-lg text-muted-foreground dark:text-white max-w-2xl mx-auto">
                                 A controlled execution framework that balances in-house capability with strategic partnerships.
                             </p>
                         </div>
@@ -150,14 +150,14 @@ export default function CapabilitiesPage() {
 
                                     {/* Body */}
                                     <div className="p-8">
-                                        <p className="text-muted-foreground mb-6 leading-relaxed">
+                                        <p className="text-muted-foreground dark:text-white mb-6 leading-relaxed">
                                             {pillar.description}
                                         </p>
                                         <ul className="space-y-3">
                                             {pillar.benefits.map((benefit, i) => (
                                                 <li key={i} className="flex gap-3 items-start">
                                                     <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
-                                                    <span className="text-sm">{benefit}</span>
+                                                    <span className="text-sm dark:text-white">{benefit}</span>
                                                 </li>
                                             ))}
                                         </ul>
@@ -186,7 +186,7 @@ export default function CapabilitiesPage() {
                                         <h4 className="text-lg font-bold uppercase tracking-tight mb-4 group-hover:text-primary transition-colors">{cap.title}</h4>
                                         <ul className="space-y-2 mb-6">
                                             {cap.items.map((item, i) => (
-                                                <li key={i} className="text-sm text-muted-foreground flex gap-2 items-start">
+                                                <li key={i} className="text-sm text-muted-foreground dark:text-white flex gap-2 items-start">
                                                     <span className="text-primary">•</span>
                                                     {item}
                                                 </li>
@@ -255,10 +255,10 @@ export default function CapabilitiesPage() {
                 <section className="py-8 bg-zinc-100 dark:bg-zinc-900 border-t border-border">
                     <div className="container px-4 md:px-6">
                         <div className="flex flex-wrap justify-center gap-8 text-sm">
-                            <Link href="/safety-quality" className="inline-flex items-center gap-2 font-bold uppercase tracking-widest text-muted-foreground hover:text-primary transition-colors">
+                            <Link href="/safety-quality" className="inline-flex items-center gap-2 font-bold uppercase tracking-widest text-muted-foreground dark:text-white hover:text-primary transition-colors">
                                 <ShieldCheck className="h-4 w-4" /> Safety & Quality
                             </Link>
-                            <Link href="/markets-geography" className="inline-flex items-center gap-2 font-bold uppercase tracking-widest text-muted-foreground hover:text-primary transition-colors">
+                            <Link href="/markets-geography" className="inline-flex items-center gap-2 font-bold uppercase tracking-widest text-muted-foreground dark:text-white hover:text-primary transition-colors">
                                 <TrendingUp className="h-4 w-4" /> Markets & Geography
                             </Link>
                         </div>

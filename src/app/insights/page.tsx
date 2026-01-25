@@ -87,10 +87,10 @@ export default async function InsightsPage() {
                                             <Calendar className="h-3 w-3" />
                                             {format(new Date(post.publishedAt), "MMMM d, yyyy")}
                                         </div>
-                                        <h3 className="text-xl font-bold uppercase tracking-tight mb-4 group-hover:text-primary transition-colors line-clamp-2 text-foreground">
+                                        <h3 className="text-xl font-bold uppercase tracking-tight mb-4 group-hover:text-primary transition-colors line-clamp-2 text-foreground dark:text-white">
                                             {post.title}
                                         </h3>
-                                        <p className="text-muted-foreground text-sm line-clamp-3 mb-8 flex-1 leading-relaxed">
+                                        <p className="text-muted-foreground dark:text-white text-sm line-clamp-3 mb-8 flex-1 leading-relaxed">
                                             {post.excerpt}
                                         </p>
                                         <div className="flex items-center text-sm font-bold uppercase tracking-widest text-primary mt-auto">
@@ -103,7 +103,7 @@ export default async function InsightsPage() {
                     </div>
                 ) : (
                     <div className="text-center py-20">
-                        <p className="text-muted-foreground">No insights published yet. Check back soon.</p>
+                        <p className="text-muted-foreground dark:text-white">No insights published yet. Check back soon.</p>
                     </div>
                 )}
             </div>

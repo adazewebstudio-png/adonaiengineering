@@ -105,7 +105,7 @@ export default function Home() {
             <div className="mb-16 md:mb-20">
               <h2 className="text-3xl md:text-5xl font-black uppercase tracking-tight text-primary mb-6">Services at a Glance</h2>
               <div className="h-1.5 w-24 bg-primary" />
-              <p className="mt-6 text-xl text-muted-foreground max-w-2xl">
+              <p className="mt-6 text-xl text-muted-foreground dark:text-white max-w-2xl">
                 We provide end-to-end engineering solutions. From conception to commissioning.
               </p>
             </div>
@@ -118,8 +118,8 @@ export default function Home() {
                     <Building2 className="h-6 w-6" />
                   </div>
                   <h3 className="text-xl font-bold uppercase mb-3 group-hover:text-primary transition-colors">Building Construction</h3>
-                  <p className="text-sm text-muted-foreground mb-4">Residential, commercial, hospitality, and institutional buildings delivered through direct execution.</p>
-                  <span className="flex items-center text-xs font-bold uppercase tracking-wider text-muted-foreground group-hover:text-primary">
+                  <p className="text-sm text-muted-foreground dark:text-white mb-4">Residential, commercial, hospitality, and institutional buildings delivered through direct execution.</p>
+                  <span className="flex items-center text-xs font-bold uppercase tracking-wider text-muted-foreground dark:text-white group-hover:text-primary">
                     Details <ArrowRight className="ml-2 h-3 w-3 transition-transform group-hover:translate-x-1" />
                   </span>
                 </div>
@@ -132,8 +132,8 @@ export default function Home() {
                     <LandPlot className="h-6 w-6" />
                   </div>
                   <h3 className="text-xl font-bold uppercase mb-3 group-hover:text-secondary transition-colors">Estate & Property Development Construction</h3>
-                  <p className="text-sm text-muted-foreground mb-4">Turnkey and phased estate developments, including internal infrastructure.</p>
-                  <span className="flex items-center text-xs font-bold uppercase tracking-wider text-muted-foreground group-hover:text-secondary">
+                  <p className="text-sm text-muted-foreground dark:text-white mb-4">Turnkey and phased estate developments, including internal infrastructure.</p>
+                  <span className="flex items-center text-xs font-bold uppercase tracking-wider text-muted-foreground dark:text-white group-hover:text-secondary">
                     Details <ArrowRight className="ml-2 h-3 w-3 transition-transform group-hover:translate-x-1" />
                   </span>
                 </div>
@@ -146,8 +146,8 @@ export default function Home() {
                     <LandPlot className="h-6 w-6" />
                   </div>
                   <h3 className="text-xl font-bold uppercase mb-3 group-hover:text-primary transition-colors">Civil Works & Development Infrastructure</h3>
-                  <p className="text-sm text-muted-foreground mb-4">Estate and access roads, drainage systems, earthworks, and site formation.</p>
-                  <span className="flex items-center text-xs font-bold uppercase tracking-wider text-muted-foreground group-hover:text-primary">
+                  <p className="text-sm text-muted-foreground dark:text-white mb-4">Estate and access roads, drainage systems, earthworks, and site formation.</p>
+                  <span className="flex items-center text-xs font-bold uppercase tracking-wider text-muted-foreground dark:text-white group-hover:text-primary">
                     Details <ArrowRight className="ml-2 h-3 w-3 transition-transform group-hover:translate-x-1" />
                   </span>
                 </div>
@@ -160,8 +160,8 @@ export default function Home() {
                     <HardHat className="h-6 w-6" />
                   </div>
                   <h3 className="text-xl font-bold uppercase mb-3 group-hover:text-primary transition-colors">Project Execution & Construction Management</h3>
-                  <p className="text-sm text-muted-foreground mb-4">Planning, cost and quality control, supervision, and coordinated delivery.</p>
-                  <span className="flex items-center text-xs font-bold uppercase tracking-wider text-muted-foreground group-hover:text-primary">
+                  <p className="text-sm text-muted-foreground dark:text-white mb-4">Planning, cost and quality control, supervision, and coordinated delivery.</p>
+                  <span className="flex items-center text-xs font-bold uppercase tracking-wider text-muted-foreground dark:text-white group-hover:text-primary">
                     Details <ArrowRight className="ml-2 h-3 w-3 transition-transform group-hover:translate-x-1" />
                   </span>
                 </div>
@@ -232,7 +232,7 @@ export default function Home() {
         <section className="py-24 bg-zinc-100 dark:bg-zinc-900 border-b border-border">
           <div className="container px-4 md:px-6 text-center">
             <h2 className="text-3xl font-black uppercase tracking-tight mb-4">Experience Signal</h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto mb-8">
+            <p className="text-xl text-muted-foreground dark:text-white max-w-2xl mx-auto mb-8">
               Since 2021, we have executed construction works across residential and commercial developments, delivering complete buildings and supporting infrastructure.
             </p>
             <Button href="/experience" size="lg" variant="outline">View Our Experience</Button>
@@ -250,7 +250,7 @@ export default function Home() {
                 <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-bold uppercase tracking-widest mb-4">
                   <TrendingUp className="h-4 w-4" /> Geographic Posture
                 </div>
-                <p className="text-lg text-muted-foreground mb-6">
+                <p className="text-lg text-muted-foreground dark:text-white mb-6">
                   Our operations are currently based in Ghana. Our systems, standards, and delivery approach are designed to support growth across African markets as opportunities arise.
                 </p>
               </div>

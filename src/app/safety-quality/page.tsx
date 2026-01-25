@@ -112,14 +112,14 @@ export default function SafetyPage() {
                                 <h2 className="text-3xl md:text-4xl font-black uppercase tracking-tight mb-6">
                                     Our Commitment
                                 </h2>
-                                <p className="text-lg text-muted-foreground leading-relaxed mb-8">
+                                <p className="text-lg text-muted-foreground dark:text-white leading-relaxed mb-8">
                                     We are committed to protecting the safety and integrity of everyone and everything connected to our projects.
                                 </p>
                                 <div className="space-y-4">
                                     {commitments.map((item, i) => (
                                         <div key={i} className="flex gap-4 items-start p-4 bg-zinc-50 dark:bg-zinc-900 rounded-sm border border-border">
                                             <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
-                                            <span className="text-sm">{item}</span>
+                                            <span className="text-sm dark:text-white">{item}</span>
                                         </div>
                                     ))}
                                 </div>
@@ -147,7 +147,7 @@ export default function SafetyPage() {
                         <div className="text-center mb-16">
                             <h2 className="text-3xl md:text-4xl font-black uppercase tracking-tight mb-4">Safety Protocols</h2>
                             <div className="h-1.5 w-20 bg-primary mx-auto mb-6" />
-                            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+                            <p className="text-lg text-muted-foreground dark:text-white max-w-2xl mx-auto">
                                 Systematic safety measures implemented on every project site.
                             </p>
                         </div>
@@ -159,7 +159,7 @@ export default function SafetyPage() {
                                         <protocol.icon className="h-7 w-7 text-primary group-hover:text-white transition-colors" />
                                     </div>
                                     <h4 className="font-bold uppercase tracking-tight mb-2">{protocol.title}</h4>
-                                    <p className="text-sm text-muted-foreground">{protocol.description}</p>
+                                    <p className="text-sm text-muted-foreground dark:text-white">{protocol.description}</p>
                                 </div>
                             ))}
                         </div>
@@ -172,7 +172,7 @@ export default function SafetyPage() {
                         <div className="text-center mb-16">
                             <h2 className="text-3xl md:text-4xl font-black uppercase tracking-tight mb-4">Quality Controls</h2>
                             <div className="h-1.5 w-20 bg-primary mx-auto mb-6" />
-                            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+                            <p className="text-lg text-muted-foreground dark:text-white max-w-2xl mx-auto">
                                 Structured quality assurance throughout project delivery.
                             </p>
                         </div>
@@ -184,7 +184,7 @@ export default function SafetyPage() {
                                         <control.icon className="h-7 w-7 text-zinc-600 dark:text-zinc-400 group-hover:text-white transition-colors" />
                                     </div>
                                     <h4 className="font-bold uppercase tracking-tight mb-2">{control.title}</h4>
-                                    <p className="text-sm text-muted-foreground">{control.description}</p>
+                                    <p className="text-sm text-muted-foreground dark:text-white">{control.description}</p>
                                 </div>
                             ))}
                         </div>
@@ -215,10 +215,10 @@ export default function SafetyPage() {
                 <section className="py-8 bg-zinc-100 dark:bg-zinc-900 border-t border-border">
                     <div className="container px-4 md:px-6">
                         <div className="flex flex-wrap justify-center gap-8 text-sm">
-                            <Link href="/capabilities" className="inline-flex items-center gap-2 font-bold uppercase tracking-widest text-muted-foreground hover:text-primary transition-colors">
+                            <Link href="/capabilities" className="inline-flex items-center gap-2 font-bold uppercase tracking-widest text-muted-foreground dark:text-white hover:text-primary transition-colors">
                                 <Layers className="h-4 w-4" /> Our Capabilities
                             </Link>
-                            <Link href="/services/project-management" className="inline-flex items-center gap-2 font-bold uppercase tracking-widest text-muted-foreground hover:text-primary transition-colors">
+                            <Link href="/services/project-management" className="inline-flex items-center gap-2 font-bold uppercase tracking-widest text-muted-foreground dark:text-white hover:text-primary transition-colors">
                                 <HardHat className="h-4 w-4" /> Project Management
                             </Link>
                         </div>

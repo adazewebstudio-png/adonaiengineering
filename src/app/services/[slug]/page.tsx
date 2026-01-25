@@ -183,7 +183,7 @@ export default async function ServicePage(props: { params: Promise<{ slug: strin
                     {/* Back Link */}
                     <div className="bg-zinc-100 dark:bg-zinc-900 border-b border-border">
                         <div className="container px-4 md:px-6 py-4">
-                            <Link href="/services" className="inline-flex items-center text-sm font-bold uppercase tracking-widest text-muted-foreground hover:text-primary transition-colors">
+                            <Link href="/services" className="inline-flex items-center text-sm font-bold uppercase tracking-widest text-muted-foreground dark:text-white hover:text-primary transition-colors">
                                 <ArrowLeft className="mr-2 h-4 w-4" /> All Services
                             </Link>
                         </div>
@@ -200,7 +200,7 @@ export default async function ServicePage(props: { params: Promise<{ slug: strin
                                     <h2 className="text-3xl md:text-4xl font-black uppercase tracking-tight mb-6">
                                         Overview
                                     </h2>
-                                    <p className="text-lg text-muted-foreground leading-relaxed">
+                                    <p className="text-lg text-muted-foreground dark:text-white leading-relaxed">
                                         {service.overview}
                                     </p>
                                 </div>
@@ -238,7 +238,7 @@ export default async function ServicePage(props: { params: Promise<{ slug: strin
                                             </div>
                                             <div>
                                                 <h4 className="text-lg font-bold uppercase tracking-tight mb-2">{item.title}</h4>
-                                                <p className="text-sm text-muted-foreground leading-relaxed">{item.description}</p>
+                                                <p className="text-sm text-muted-foreground dark:text-white leading-relaxed">{item.description}</p>
                                             </div>
                                         </div>
                                     </div>
@@ -255,14 +255,14 @@ export default async function ServicePage(props: { params: Promise<{ slug: strin
                                     <h2 className="text-3xl md:text-4xl font-black uppercase tracking-tight mb-6">
                                         How We Execute
                                     </h2>
-                                    <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
+                                    <p className="text-lg text-muted-foreground dark:text-white mb-8 leading-relaxed">
                                         Our approach is defined by clarity, control, and accountability at every stage.
                                     </p>
                                     <div className="space-y-4">
                                         {service.howWeExecute.map((item, i) => (
                                             <div key={i} className="flex gap-4 items-center p-4 bg-zinc-50 dark:bg-zinc-900 rounded-sm border border-border">
                                                 <span className="h-8 w-8 rounded-full bg-primary text-white flex items-center justify-center text-sm font-bold shrink-0">{i + 1}</span>
-                                                <span className="font-medium">{item}</span>
+                                                <span className="font-medium dark:text-white">{item}</span>
                                             </div>
                                         ))}
                                     </div>
@@ -287,14 +287,14 @@ export default async function ServicePage(props: { params: Promise<{ slug: strin
                     <section className="py-12 bg-zinc-100 dark:bg-zinc-800 border-t border-border">
                         <div className="container px-4 md:px-6">
                             <div className="flex flex-wrap justify-center gap-8 text-sm">
-                                <Link href="/capabilities" className="inline-flex items-center gap-2 font-bold uppercase tracking-widest text-muted-foreground hover:text-primary transition-colors">
+                                <Link href="/capabilities" className="inline-flex items-center gap-2 font-bold uppercase tracking-widest text-muted-foreground dark:text-white hover:text-primary transition-colors">
                                     <Users className="h-4 w-4" /> Our Capabilities
                                 </Link>
-                                <Link href="/experience" className="inline-flex items-center gap-2 font-bold uppercase tracking-widest text-muted-foreground hover:text-primary transition-colors">
+                                <Link href="/experience" className="inline-flex items-center gap-2 font-bold uppercase tracking-widest text-muted-foreground dark:text-white hover:text-primary transition-colors">
                                     <Building2 className="h-4 w-4" /> Experience & Portfolio
                                 </Link>
                                 {service.relatedService && (
-                                    <Link href={`/services/${service.relatedService.slug}`} className="inline-flex items-center gap-2 font-bold uppercase tracking-widest text-muted-foreground hover:text-primary transition-colors">
+                                    <Link href={`/services/${service.relatedService.slug}`} className="inline-flex items-center gap-2 font-bold uppercase tracking-widest text-muted-foreground dark:text-white hover:text-primary transition-colors">
                                         <ArrowRight className="h-4 w-4" /> {service.relatedService.name}
                                     </Link>
                                 )}

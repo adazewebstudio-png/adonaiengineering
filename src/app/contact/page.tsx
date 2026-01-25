@@ -64,7 +64,7 @@ export default function ContactPage() {
                             <h2 className="text-3xl md:text-4xl font-black uppercase tracking-tight mb-6">
                                 Let's <span className="text-primary">Build Together</span>
                             </h2>
-                            <p className="text-xl text-muted-foreground leading-relaxed">
+                            <p className="text-xl text-muted-foreground dark:text-white leading-relaxed">
                                 Whether you are planning a building project, estate development, civil works, or require structured project execution support, we welcome enquiries from clients, developers, institutions, and partners.
                             </p>
                         </div>
@@ -87,14 +87,14 @@ export default function ContactPage() {
                                         </div>
                                         <h3 className="text-xl font-bold uppercase tracking-tight">Request a Proposal</h3>
                                     </div>
-                                    <p className="text-muted-foreground mb-6 text-sm">
+                                    <p className="text-muted-foreground dark:text-white mb-6 text-sm">
                                         To help us respond effectively, please provide:
                                     </p>
                                     <div className="space-y-3">
                                         {proposalInfo.map((item, i) => (
                                             <div key={i} className="flex gap-3 items-start">
                                                 <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
-                                                <span className="text-sm">{item}</span>
+                                                <span className="text-sm dark:text-white">{item}</span>
                                             </div>
                                         ))}
                                     </div>
@@ -159,11 +159,11 @@ export default function ContactPage() {
                                     <input type="hidden" name="form-name" value="contact" />
                                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                         <div className="space-y-2">
-                                            <label htmlFor="name" className="text-xs font-bold uppercase tracking-widest text-muted-foreground">Your Name *</label>
+                                            <label htmlFor="name" className="text-xs font-bold uppercase tracking-widest text-muted-foreground dark:text-white">Your Name *</label>
                                             <input type="text" id="name" name="name" required className="flex h-12 w-full rounded-sm border border-input bg-zinc-50 dark:bg-zinc-900 px-4 py-2 text-sm placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary transition-all" placeholder="Full Name" />
                                         </div>
                                         <div className="space-y-2">
-                                            <label htmlFor="email" className="text-xs font-bold uppercase tracking-widest text-muted-foreground">Email *</label>
+                                            <label htmlFor="email" className="text-xs font-bold uppercase tracking-widest text-muted-foreground dark:text-white">Email *</label>
                                             <input type="email" id="email" name="email" required className="flex h-12 w-full rounded-sm border border-input bg-zinc-50 dark:bg-zinc-900 px-4 py-2 text-sm placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary transition-all" placeholder="you@example.com" />
                                         </div>
                                     </div>
@@ -207,7 +207,7 @@ export default function ContactPage() {
                         <div className="text-center mb-16">
                             <h2 className="text-3xl md:text-4xl font-black uppercase tracking-tight mb-4">How We Engage</h2>
                             <div className="h-1.5 w-20 bg-primary mx-auto mb-6" />
-                            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+                            <p className="text-lg text-muted-foreground dark:text-white max-w-2xl mx-auto">
                                 Our engagement process ensures clarity from the outset.
                             </p>
                         </div>
@@ -219,7 +219,7 @@ export default function ContactPage() {
                                         {item.step}
                                     </div>
                                     <h4 className="font-bold uppercase tracking-tight mb-2">{item.title}</h4>
-                                    <p className="text-sm text-muted-foreground">{item.description}</p>
+                                    <p className="text-sm text-muted-foreground dark:text-white">{item.description}</p>
                                 </div>
                             ))}
                         </div>
@@ -245,10 +245,10 @@ export default function ContactPage() {
                 <section className="py-8 bg-zinc-100 dark:bg-zinc-900 border-t border-border">
                     <div className="container px-4 md:px-6">
                         <div className="flex flex-wrap justify-center gap-8 text-sm">
-                            <Link href="/services" className="inline-flex items-center gap-2 font-bold uppercase tracking-widest text-muted-foreground hover:text-primary transition-colors">
+                            <Link href="/services" className="inline-flex items-center gap-2 font-bold uppercase tracking-widest text-muted-foreground dark:text-white hover:text-primary transition-colors">
                                 <Building2 className="h-4 w-4" /> Our Services
                             </Link>
-                            <Link href="/capabilities" className="inline-flex items-center gap-2 font-bold uppercase tracking-widest text-muted-foreground hover:text-primary transition-colors">
+                            <Link href="/capabilities" className="inline-flex items-center gap-2 font-bold uppercase tracking-widest text-muted-foreground dark:text-white hover:text-primary transition-colors">
                                 <CheckCircle2 className="h-4 w-4" /> Capabilities
                             </Link>
                         </div>

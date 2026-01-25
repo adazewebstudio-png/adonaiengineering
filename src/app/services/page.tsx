@@ -42,7 +42,7 @@ export default function ServicesPage() {
                     {/* Intro Block */}
                     <div className="max-w-4xl mx-auto mb-20 text-center">
                         <h2 className="text-3xl font-black uppercase tracking-tight mb-6">Structured for Success</h2>
-                        <p className="text-xl text-muted-foreground leading-relaxed">
+                        <p className="text-xl text-muted-foreground dark:text-white leading-relaxed">
                             Our services are structured to cover the entire lifecycle of the built environment. Whether you are building a commercial high-rise, a sprawling residential estate, or the infrastructure that connects them, we have the specialized expertise to deliver.
                         </p>
                     </div>
@@ -59,7 +59,7 @@ export default function ServicesPage() {
                                     <h2 className="text-3xl md:text-4xl font-black uppercase tracking-tight group-hover:text-primary transition-colors">
                                         {service.metadata.title}
                                     </h2>
-                                    <p className="text-lg text-muted-foreground leading-relaxed">
+                                    <p className="text-lg text-muted-foreground dark:text-white leading-relaxed">
                                         {service.metadata.description}
                                     </p>
                                     <div className="pt-4">
@@ -102,7 +102,7 @@ export default function ServicesPage() {
                         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                             <div>
                                 <h2 className="text-3xl font-black uppercase tracking-tight mb-6">Delivery Philosophy</h2>
-                                <p className="text-lg text-muted-foreground mb-8">
+                                <p className="text-lg text-muted-foreground dark:text-white mb-8">
                                     We believe in flexibility without compromising control. Our hybrid delivery model ensures we can handle projects of varying scale and complexity.
                                 </p>
                                 <div className="space-y-4">
@@ -110,14 +110,14 @@ export default function ServicesPage() {
                                         <CheckCircle2 className="h-6 w-6 text-primary shrink-0" />
                                         <div>
                                             <h4 className="font-bold uppercase">Direct Execution</h4>
-                                            <p className="text-sm text-muted-foreground">For core works, we deploy our own teams to ensure quality.</p>
+                                            <p className="text-sm text-muted-foreground dark:text-white">For core works, we deploy our own teams to ensure quality.</p>
                                         </div>
                                     </div>
                                     <div className="flex gap-4">
                                         <CheckCircle2 className="h-6 w-6 text-primary shrink-0" />
                                         <div>
                                             <h4 className="font-bold uppercase">Scalable Partnerships</h4>
-                                            <p className="text-sm text-muted-foreground">For specialized trades, we manage vetted partners under our systems.</p>
+                                            <p className="text-sm text-muted-foreground dark:text-white">For specialized trades, we manage vetted partners under our systems.</p>
                                         </div>
                                     </div>
                                 </div>

@@ -89,10 +89,10 @@ export default function ExperiencePage() {
                                 <h2 className="text-3xl md:text-4xl font-black uppercase tracking-tight mb-6">
                                     Grounded in <span className="text-primary">Real Delivery</span>
                                 </h2>
-                                <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+                                <p className="text-lg text-muted-foreground dark:text-white leading-relaxed mb-6">
                                     Our experience is grounded in direct project execution across residential and commercial developments. We don't just advise — we build.
                                 </p>
-                                <p className="text-muted-foreground leading-relaxed">
+                                <p className="text-muted-foreground dark:text-white leading-relaxed">
                                     Our portfolio reflects hands-on construction delivery, disciplined site management, and the ability to coordinate buildings and supporting infrastructure within real development contexts.
                                 </p>
                             </div>
@@ -102,7 +102,7 @@ export default function ExperiencePage() {
                                 {trackRecord.map((item, i) => (
                                     <div key={i} className="bg-zinc-50 dark:bg-zinc-900 p-6 rounded-sm border border-border hover:border-primary transition-colors">
                                         <CheckCircle2 className="h-6 w-6 text-primary mb-3" />
-                                        <p className="text-sm font-medium">{item}</p>
+                                        <p className="text-sm font-medium dark:text-white">{item}</p>
                                     </div>
                                 ))}
                             </div>
@@ -116,7 +116,7 @@ export default function ExperiencePage() {
                         <div className="text-center mb-16">
                             <h2 className="text-3xl md:text-4xl font-black uppercase tracking-tight mb-4">Project Categories</h2>
                             <div className="h-1.5 w-20 bg-primary mx-auto mb-6" />
-                            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+                            <p className="text-lg text-muted-foreground dark:text-white max-w-2xl mx-auto">
                                 We have executed construction works across a range of project types.
                             </p>
                         </div>
@@ -128,8 +128,8 @@ export default function ExperiencePage() {
                                         <cat.icon className="h-8 w-8 text-primary group-hover:text-white transition-colors" />
                                     </div>
                                     <h4 className="text-lg font-bold uppercase tracking-tight mb-2">{cat.title}</h4>
-                                    <p className="text-sm text-muted-foreground mb-4">{cat.description}</p>
-                                    <span className="inline-block px-3 py-1 rounded-full bg-zinc-100 dark:bg-zinc-800 text-xs font-bold uppercase tracking-widest text-muted-foreground">
+                                    <p className="text-sm text-muted-foreground dark:text-white mb-4">{cat.description}</p>
+                                    <span className="inline-block px-3 py-1 rounded-full bg-zinc-100 dark:bg-zinc-800 text-xs font-bold uppercase tracking-widest text-muted-foreground dark:text-white">
                                         {cat.count}
                                     </span>
                                 </div>
@@ -185,10 +185,10 @@ export default function ExperiencePage() {
                                 </div>
                                 <div>
                                     <h4 className="font-bold uppercase">Geographic Context</h4>
-                                    <p className="text-sm text-muted-foreground">Projects primarily based in Ghana</p>
+                                    <p className="text-sm text-muted-foreground dark:text-white">Projects primarily based in Ghana</p>
                                 </div>
                             </div>
-                            <p className="text-muted-foreground max-w-xl text-center md:text-left">
+                            <p className="text-muted-foreground dark:text-white max-w-xl text-center md:text-left">
                                 Our experience and delivery systems are designed to support projects of increasing scale across African markets.
                             </p>
                             <Link href="/markets-geography" className="inline-flex items-center gap-2 text-sm font-bold uppercase tracking-widest text-primary hover:underline shrink-0">
@@ -222,10 +222,10 @@ export default function ExperiencePage() {
                 <section className="py-8 bg-zinc-100 dark:bg-zinc-900 border-t border-border">
                     <div className="container px-4 md:px-6">
                         <div className="flex flex-wrap justify-center gap-8 text-sm">
-                            <Link href="/services" className="inline-flex items-center gap-2 font-bold uppercase tracking-widest text-muted-foreground hover:text-primary transition-colors">
+                            <Link href="/services" className="inline-flex items-center gap-2 font-bold uppercase tracking-widest text-muted-foreground dark:text-white hover:text-primary transition-colors">
                                 <Building2 className="h-4 w-4" /> Our Services
                             </Link>
-                            <Link href="/markets-geography" className="inline-flex items-center gap-2 font-bold uppercase tracking-widest text-muted-foreground hover:text-primary transition-colors">
+                            <Link href="/markets-geography" className="inline-flex items-center gap-2 font-bold uppercase tracking-widest text-muted-foreground dark:text-white hover:text-primary transition-colors">
                                 <TrendingUp className="h-4 w-4" /> Markets & Geography
                             </Link>
                         </div>

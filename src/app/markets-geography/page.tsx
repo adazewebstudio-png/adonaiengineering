@@ -96,14 +96,14 @@ export default function MarketsPage() {
                                 <h2 className="text-3xl md:text-4xl font-black uppercase tracking-tight mb-6">
                                     Ghana-Based <span className="text-primary">Operations</span>
                                 </h2>
-                                <p className="text-lg text-muted-foreground leading-relaxed mb-8">
+                                <p className="text-lg text-muted-foreground dark:text-white leading-relaxed mb-8">
                                     Our construction operations are currently based in <strong>Ghana</strong>, where we have executed projects across residential and commercial developments since 2021.
                                 </p>
                                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                                     {ghanaAdvantages.map((item, i) => (
                                         <div key={i} className="flex gap-3 items-start">
                                             <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
-                                            <span className="text-sm">{item}</span>
+                                            <span className="text-sm dark:text-white">{item}</span>
                                         </div>
                                     ))}
                                 </div>
@@ -128,14 +128,14 @@ export default function MarketsPage() {
                                 <div className="bg-zinc-100 dark:bg-zinc-900 p-8 rounded-sm border border-border">
                                     <div className="flex items-center gap-4 mb-4">
                                         <div className="h-14 w-14 rounded-full bg-zinc-200 dark:bg-zinc-800 flex items-center justify-center shrink-0">
-                                            <Globe2 className="h-7 w-7 text-muted-foreground" />
+                                            <Globe2 className="h-7 w-7 text-muted-foreground dark:text-white" />
                                         </div>
                                         <div>
-                                            <span className="text-2xl font-black uppercase block text-muted-foreground">Africa</span>
-                                            <span className="text-sm text-muted-foreground">Strategic Growth Posture</span>
+                                            <span className="text-2xl font-black uppercase block text-muted-foreground dark:text-white">Africa</span>
+                                            <span className="text-sm text-muted-foreground dark:text-white">Strategic Growth Posture</span>
                                         </div>
                                     </div>
-                                    <p className="text-sm text-muted-foreground">
+                                    <p className="text-sm text-muted-foreground dark:text-white">
                                         Systems and delivery frameworks designed to support project-led expansion across African markets.
                                     </p>
                                 </div>
@@ -150,7 +150,7 @@ export default function MarketsPage() {
                         <div className="text-center mb-16">
                             <h2 className="text-3xl md:text-4xl font-black uppercase tracking-tight mb-4">Structured for Scale</h2>
                             <div className="h-1.5 w-20 bg-primary mx-auto mb-6" />
-                            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+                            <p className="text-lg text-muted-foreground dark:text-white max-w-2xl mx-auto">
                                 While anchored in Ghana, we are not structured as a location-bound contractor. Our delivery model is designed to scale.
                             </p>
                         </div>
@@ -162,7 +162,7 @@ export default function MarketsPage() {
                                         <cap.icon className="h-7 w-7 text-primary group-hover:text-white transition-colors" />
                                     </div>
                                     <h4 className="font-bold uppercase tracking-tight mb-2">{cap.title}</h4>
-                                    <p className="text-sm text-muted-foreground">{cap.description}</p>
+                                    <p className="text-sm text-muted-foreground dark:text-white">{cap.description}</p>
                                 </div>
                             ))}
                         </div>
@@ -216,7 +216,7 @@ export default function MarketsPage() {
                 {/* What This Means for Clients */}
                 <section className="py-16 bg-zinc-100 dark:bg-zinc-800 border-y border-border">
                     <div className="container px-4 md:px-6">
-                        <h3 className="text-center font-bold uppercase tracking-widest text-sm text-muted-foreground mb-8">What This Means for Clients</h3>
+                        <h3 className="text-center font-bold uppercase tracking-widest text-sm text-muted-foreground dark:text-white mb-8">What This Means for Clients</h3>
                         <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
                             {[
                                 "Reliable execution grounded in real operating experience",
@@ -226,7 +226,7 @@ export default function MarketsPage() {
                             ].map((item, i) => (
                                 <div key={i} className="bg-white dark:bg-zinc-900 p-6 rounded-sm border border-border text-center">
                                     <CheckCircle2 className="h-8 w-8 text-primary mx-auto mb-4" />
-                                    <p className="text-sm">{item}</p>
+                                    <p className="text-sm dark:text-white">{item}</p>
                                 </div>
                             ))}
                         </div>
@@ -252,13 +252,13 @@ export default function MarketsPage() {
                 <section className="py-8 bg-zinc-100 dark:bg-zinc-900 border-t border-border">
                     <div className="container px-4 md:px-6">
                         <div className="flex flex-wrap justify-center gap-8 text-sm">
-                            <Link href="/services" className="inline-flex items-center gap-2 font-bold uppercase tracking-widest text-muted-foreground hover:text-primary transition-colors">
+                            <Link href="/services" className="inline-flex items-center gap-2 font-bold uppercase tracking-widest text-muted-foreground dark:text-white hover:text-primary transition-colors">
                                 <Building2 className="h-4 w-4" /> Our Services
                             </Link>
-                            <Link href="/capabilities" className="inline-flex items-center gap-2 font-bold uppercase tracking-widest text-muted-foreground hover:text-primary transition-colors">
+                            <Link href="/capabilities" className="inline-flex items-center gap-2 font-bold uppercase tracking-widest text-muted-foreground dark:text-white hover:text-primary transition-colors">
                                 <Layers className="h-4 w-4" /> Capabilities
                             </Link>
-                            <Link href="/experience" className="inline-flex items-center gap-2 font-bold uppercase tracking-widest text-muted-foreground hover:text-primary transition-colors">
+                            <Link href="/experience" className="inline-flex items-center gap-2 font-bold uppercase tracking-widest text-muted-foreground dark:text-white hover:text-primary transition-colors">
                                 <TrendingUp className="h-4 w-4" /> Experience
                             </Link>
                         </div>

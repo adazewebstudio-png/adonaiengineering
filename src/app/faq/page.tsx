@@ -114,7 +114,7 @@ export default function FAQPage() {
                 <section className="py-16 bg-white dark:bg-zinc-950">
                     <div className="container px-4 md:px-6">
                         <div className="max-w-3xl mx-auto text-center">
-                            <p className="text-xl text-muted-foreground leading-relaxed">
+                            <p className="text-xl text-muted-foreground dark:text-white leading-relaxed">
                                 Find answers to common questions about our services, capabilities, and how we work. Can't find what you're looking for? <Link href="/contact" className="text-primary hover:underline font-bold">Contact us directly</Link>.
                             </p>
                         </div>
@@ -157,7 +157,7 @@ export default function FAQPage() {
                                                 <AccordionTrigger className="text-left font-bold px-6 py-5 hover:no-underline hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors">
                                                     {faq.question}
                                                 </AccordionTrigger>
-                                                <AccordionContent className="px-6 pb-6 text-muted-foreground leading-relaxed">
+                                                <AccordionContent className="px-6 pb-6 text-muted-foreground dark:text-white leading-relaxed">
                                                     {faq.answer}
                                                 </AccordionContent>
                                             </AccordionItem>
@@ -193,13 +193,13 @@ export default function FAQPage() {
                 <section className="py-8 bg-zinc-100 dark:bg-zinc-900 border-t border-border">
                     <div className="container px-4 md:px-6">
                         <div className="flex flex-wrap justify-center gap-8 text-sm">
-                            <Link href="/services" className="inline-flex items-center gap-2 font-bold uppercase tracking-widest text-muted-foreground hover:text-primary transition-colors">
+                            <Link href="/services" className="inline-flex items-center gap-2 font-bold uppercase tracking-widest text-muted-foreground dark:text-white hover:text-primary transition-colors">
                                 <Building2 className="h-4 w-4" /> Our Services
                             </Link>
-                            <Link href="/capabilities" className="inline-flex items-center gap-2 font-bold uppercase tracking-widest text-muted-foreground hover:text-primary transition-colors">
+                            <Link href="/capabilities" className="inline-flex items-center gap-2 font-bold uppercase tracking-widest text-muted-foreground dark:text-white hover:text-primary transition-colors">
                                 <TrendingUp className="h-4 w-4" /> Capabilities
                             </Link>
-                            <Link href="/markets-geography" className="inline-flex items-center gap-2 font-bold uppercase tracking-widest text-muted-foreground hover:text-primary transition-colors">
+                            <Link href="/markets-geography" className="inline-flex items-center gap-2 font-bold uppercase tracking-widest text-muted-foreground dark:text-white hover:text-primary transition-colors">
                                 <ArrowRight className="h-4 w-4" /> Markets & Geography
                             </Link>
                         </div>

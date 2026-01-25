@@ -54,13 +54,13 @@ export default async function ProjectPage(props: { params: Promise<{ slug: strin
                     dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
                 />
                 <article className="container py-24 md:py-32 px-4 md:px-6 mt-[88px] md:mt-[96px]">
-                    <Link href="/experience" className="inline-flex items-center text-sm font-bold uppercase tracking-widest text-muted-foreground hover:text-primary mb-8">
+                    <Link href="/experience" className="inline-flex items-center text-sm font-bold uppercase tracking-widest text-muted-foreground dark:text-white hover:text-primary mb-8">
                         <ArrowLeft className="mr-2 h-4 w-4" /> Back to Experience
                     </Link>
 
                     <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
                         <div className="lg:col-span-8">
-                            <div className="flex flex-wrap gap-4 mb-4 text-sm font-bold uppercase tracking-widest text-muted-foreground">
+                            <div className="flex flex-wrap gap-4 mb-4 text-sm font-bold uppercase tracking-widest text-muted-foreground dark:text-white">
                                 {metadata.sector && (
                                     <span className="flex items-center gap-2 text-primary bg-primary/10 px-3 py-1 rounded-sm"><Building className="h-4 w-4" /> {metadata.sector}</span>
                                 )}
@@ -68,7 +68,7 @@ export default async function ProjectPage(props: { params: Promise<{ slug: strin
 
                             <h1 className="text-4xl md:text-5xl lg:text-6xl font-black uppercase tracking-tighter mb-8 leading-tight">{metadata.title}</h1>
 
-                            <div className="aspect-video w-full bg-zinc-200 dark:bg-zinc-800 rounded-sm mb-12 flex items-center justify-center text-sm font-bold uppercase tracking-widest text-muted-foreground">
+                            <div className="aspect-video w-full bg-zinc-200 dark:bg-zinc-800 rounded-sm mb-12 flex items-center justify-center text-sm font-bold uppercase tracking-widest text-muted-foreground dark:text-white">
                                 Featured Image: {metadata.image}
                             </div>
 
@@ -84,21 +84,21 @@ export default async function ProjectPage(props: { params: Promise<{ slug: strin
 
                                     {metadata.client && (
                                         <div>
-                                            <span className="block text-xs font-bold uppercase tracking-widest text-muted-foreground mb-1">Client</span>
+                                            <span className="block text-xs font-bold uppercase tracking-widest text-muted-foreground dark:text-white mb-1">Client</span>
                                             <div className="flex items-center gap-2 font-medium"><User className="h-4 w-4 text-primary" /> {metadata.client}</div>
                                         </div>
                                     )}
 
                                     {metadata.location && (
                                         <div>
-                                            <span className="block text-xs font-bold uppercase tracking-widest text-muted-foreground mb-1">Location</span>
+                                            <span className="block text-xs font-bold uppercase tracking-widest text-muted-foreground dark:text-white mb-1">Location</span>
                                             <div className="flex items-center gap-2 font-medium"><MapPin className="h-4 w-4 text-primary" /> {metadata.location}</div>
                                         </div>
                                     )}
 
                                     {metadata.date && (
                                         <div>
-                                            <span className="block text-xs font-bold uppercase tracking-widest text-muted-foreground mb-1">Completion Date</span>
+                                            <span className="block text-xs font-bold uppercase tracking-widest text-muted-foreground dark:text-white mb-1">Completion Date</span>
                                             <div className="flex items-center gap-2 font-medium"><Calendar className="h-4 w-4 text-primary" /> {metadata.date}</div>
                                         </div>
                                     )}
