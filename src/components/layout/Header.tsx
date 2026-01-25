@@ -45,7 +45,7 @@ export function Header() {
                 <div className="container mx-auto px-4 md:px-6 flex items-center justify-between">
                     {/* Logo */}
                     <Link href="/" className="flex items-center gap-3 relative z-50">
-                        <div className="relative h-10 w-10 overflow-hidden md:h-12 md:w-12 shrink-0">
+                        <div className="relative h-14 w-14 overflow-hidden md:h-16 md:w-16 shrink-0">
                             <Image
                                 src="/logo.jpg"
                                 alt="Adonai Engineering Logo"
@@ -54,8 +54,8 @@ export function Header() {
                                 priority
                             />
                         </div>
-                        <div className="hidden sm:flex flex-col leading-none">
-                            <span className="text-sm md:text-base font-black tracking-tight uppercase text-primary">
+                        <div className="flex flex-col leading-none">
+                            <span className="text-xs sm:text-sm md:text-base font-black tracking-tight uppercase text-primary">
                                 Adonai Engineering
                             </span>
                             <span className="text-[10px] md:text-xs font-bold tracking-widest uppercase text-muted-foreground">
