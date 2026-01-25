@@ -39,13 +39,13 @@ export function Header() {
         <>
             <header
                 className={cn(
-                    "fixed top-0 left-0 right-0 z-50 transition-all duration-300 border-b bg-background border-border py-4"
+                    "fixed top-0 left-0 right-0 z-50 transition-all duration-300 border-b bg-background border-border py-3 md:py-4 overflow-hidden"
                 )}
             >
                 <div className="container mx-auto px-4 flex items-center justify-between">
                     {/* Logo */}
                     <Link href="/" className="flex items-center gap-3 relative z-50">
-                        <div className="relative h-14 w-14 overflow-hidden md:h-16 md:w-16 shrink-0">
+                        <div className="relative h-10 w-10 overflow-hidden sm:h-14 sm:w-14 md:h-16 md:w-16 shrink-0">
                             <Image
                                 src="/logo.jpg"
                                 alt="Adonai Engineering Logo"
@@ -54,11 +54,11 @@ export function Header() {
                                 priority
                             />
                         </div>
-                        <div className="flex flex-col leading-none">
-                            <span className="text-xs sm:text-sm md:text-base font-black tracking-tight uppercase text-primary">
+                        <div className="flex flex-col leading-none min-w-0">
+                            <span className="text-[11px] sm:text-sm md:text-base font-black tracking-tight uppercase text-primary truncate">
                                 Adonai Engineering
                             </span>
-                            <span className="text-[10px] md:text-xs font-bold tracking-widest uppercase text-zinc-600 dark:text-zinc-400">
+                            <span className="hidden sm:block text-[10px] md:text-xs font-bold tracking-widest uppercase text-zinc-600 dark:text-zinc-400">
                                 & Construction Ltd
                             </span>
                         </div>
@@ -89,7 +89,7 @@ export function Header() {
 
                     {/* Mobile Menu Toggle */}
                     <button
-                        className="md:hidden relative z-50 text-foreground"
+                        className="md:hidden relative z-50 text-foreground shrink-0 ml-2"
                         onClick={() => setIsOpen(!isOpen)}
                         aria-label="Toggle menu"
                     >
