@@ -69,6 +69,6 @@ export default function robots(): MetadataRoute.Robots {
                 allow: '/',
             },
         ],
-        sitemap: 'https://adonai-engineering.com/sitemap.xml',
+        sitemap: 'https://adonaiengineeringltd.com/sitemap.xml',
     }
 }

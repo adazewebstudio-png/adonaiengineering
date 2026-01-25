@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next';
 import { getAllPosts } from '@/lib/mdx';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-    const baseUrl = 'https://adonai-engineering.com';
+    const baseUrl = 'https://adonaiengineeringltd.com';
 
     const services = getAllPosts("services").map((post) => ({
         url: `${baseUrl}/services/${post.slug}`,
