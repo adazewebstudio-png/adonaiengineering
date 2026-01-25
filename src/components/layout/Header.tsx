@@ -42,9 +42,9 @@ export function Header() {
                     "fixed top-0 left-0 right-0 z-50 transition-all duration-300 border-b bg-background border-border py-3 md:py-4 overflow-hidden"
                 )}
             >
-                <div className="container mx-auto px-4 flex items-center justify-between">
+                <div className="container mx-auto px-3 sm:px-4 flex items-center justify-between gap-2">
                     {/* Logo */}
-                    <Link href="/" className="flex items-center gap-3 relative z-50">
+                    <Link href="/" className="flex items-center gap-2 sm:gap-3 relative z-50 flex-1 min-w-0">
                         <div className="relative h-10 w-10 overflow-hidden sm:h-14 sm:w-14 md:h-16 md:w-16 shrink-0">
                             <Image
                                 src="/logo.jpg"
@@ -58,7 +58,7 @@ export function Header() {
                             <span className="text-[11px] sm:text-sm md:text-base font-black tracking-tight uppercase text-primary truncate">
                                 Adonai Engineering
                             </span>
-                            <span className="hidden sm:block text-[10px] md:text-xs font-bold tracking-widest uppercase text-zinc-600 dark:text-zinc-400">
+                            <span className="text-[8px] sm:text-[10px] md:text-xs font-bold tracking-widest uppercase text-zinc-600 dark:text-zinc-400">
                                 & Construction Ltd
                             </span>
                         </div>
@@ -93,7 +93,7 @@ export function Header() {
                         onClick={() => setIsOpen(!isOpen)}
                         aria-label="Toggle menu"
                     >
-                        {isOpen ? <X className="h-8 w-8" /> : <Menu className="h-8 w-8" />}
+                        {isOpen ? <X className="h-7 w-7 sm:h-8 sm:w-8" /> : <Menu className="h-7 w-7 sm:h-8 sm:w-8" />}
                     </button>
                 </div>
             </header>
