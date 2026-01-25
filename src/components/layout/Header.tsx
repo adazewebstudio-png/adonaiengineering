@@ -39,10 +39,10 @@ export function Header() {
         <>
             <header
                 className={cn(
-                    "fixed top-0 left-0 right-0 z-50 transition-all duration-300 border-b bg-white border-border py-4"
+                    "fixed top-0 left-0 right-0 z-50 transition-all duration-300 border-b bg-background border-border py-4"
                 )}
             >
-                <div className="container mx-auto px-4 md:px-6 flex items-center justify-between">
+                <div className="container mx-auto px-4 flex items-center justify-between">
                     {/* Logo */}
                     <Link href="/" className="flex items-center gap-3 relative z-50">
                         <div className="relative h-14 w-14 overflow-hidden md:h-16 md:w-16 shrink-0">
@@ -65,7 +65,7 @@ export function Header() {
                     </Link>
 
                     {/* Desktop Nav */}
-                    <nav className="hidden md:flex items-center gap-8">
+                    <nav className="hidden md:flex items-center gap-6">
                         {navLinks.map((link) => (
                             <Link
                                 key={link.href}
@@ -110,7 +110,7 @@ export function Header() {
             {/* Mobile Nav Drawer */}
             <div
                 className={cn(
-                    "fixed top-0 right-0 bottom-0 w-[75%] bg-white z-50 flex flex-col p-8 pt-24 gap-8 transition-transform duration-300 ease-in-out md:hidden shadow-2xl border-l border-border",
+                    "fixed top-0 right-0 bottom-0 w-[75%] bg-background z-50 flex flex-col p-8 pt-24 gap-8 transition-transform duration-300 ease-in-out md:hidden shadow-2xl border-l border-border",
                     isOpen ? "translate-x-0" : "translate-x-full"
                 )}
             >

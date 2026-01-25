@@ -103,7 +103,7 @@ export default function Home() {
         <section className="py-24 md:py-32 bg-background">
           <div className="container px-4 md:px-6">
             <div className="mb-16 md:mb-20">
-              <h2 className="text-3xl md:text-5xl font-black uppercase tracking-tight text-foreground mb-6">Services at a Glance</h2>
+              <h2 className="text-3xl md:text-5xl font-black uppercase tracking-tight text-primary mb-6">Services at a Glance</h2>
               <div className="h-1.5 w-24 bg-primary" />
               <p className="mt-6 text-xl text-muted-foreground max-w-2xl">
                 We provide end-to-end engineering solutions. From conception to commissioning.
