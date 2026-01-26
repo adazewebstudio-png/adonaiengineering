@@ -4,10 +4,10 @@ export function SiteSchema() {
     const organizationSchema = {
         "@context": "https://schema.org",
         "@type": "ConstructionBusiness",
-        "@id": "https://adonai-engineering.com/#organization",
+        "@id": "https://adonaiengineeringltd.com/#organization",
         "name": "Adonai Engineering And Construction Ltd",
-        "url": "https://adonai-engineering.com",
-        "logo": "https://adonai-engineering.com/logo.jpg",
+        "url": "https://adonaiengineeringltd.com",
+        "logo": "https://adonaiengineeringltd.com/logo.jpg",
         "description": "Professional engineering and construction company in Ghana delivering disciplined, high-quality construction solutions across buildings, estate developments, and supporting infrastructure.",
         "foundingDate": "2021",
         "address": {

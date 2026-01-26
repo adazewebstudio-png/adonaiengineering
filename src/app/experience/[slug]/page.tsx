@@ -19,6 +19,9 @@ export async function generateMetadata(props: { params: Promise<{ slug: string }
         return {
             title: post.metadata.title,
             description: post.metadata.description,
+            alternates: {
+                canonical: `/experience/${params.slug}`,
+            },
         }
     } catch (e) {
         return { title: 'Project Not Found' }

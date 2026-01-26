@@ -11,10 +11,13 @@ const outfit = Outfit({
 export const metadata: Metadata = {
   title: {
     template: "%s | Adonai Engineering",
-    default: "Adonai Engineering And Construction Ltd",
+    default: "Adonai Engineering And Construction Ltd | Premier Engineering in Ghana",
   },
-  description: "Premier engineering and construction services in Ghana. Specializing in building construction, civil works, and industrial projects.",
-  metadataBase: new URL("https://adonai-engineering.com"), // Placeholder URL, update when real
+  description: "Professional engineering and construction company in Ghana specializing in building construction, estate development, civil works, and infrastructure projects. Established 2021.",
+  metadataBase: new URL("https://adonaiengineeringltd.com"),
+  alternates: {
+    canonical: "/",
+  },
   icons: {
     icon: [
       { url: "/favicon.ico", sizes: "any" },
@@ -34,6 +37,23 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_GH",
     siteName: "Adonai Engineering",
+    title: "Adonai Engineering And Construction Ltd",
+    description: "Professional construction and engineering solutions across Ghana and Africa.",
+    url: "https://adonaiengineeringltd.com",
+    images: [
+      {
+        url: "/images/services/building-construction.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Adonai Engineering Building Construction",
+      }
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Adonai Engineering And Construction Ltd",
+    description: "Premier engineering and construction services in Ghana.",
+    images: ["/images/services/building-construction.jpg"],
   },
 };
 

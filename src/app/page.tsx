@@ -24,8 +24,8 @@ export default function Home() {
       "addressCountry": "GH"
     },
     "areaServed": ["Ghana", "Africa"],
-    "url": "https://adonai-engineering.com",
-    "logo": "https://adonai-engineering.com/logo.jpg"
+    "url": "https://adonaiengineeringltd.com",
+    "logo": "https://adonaiengineeringltd.com/logo.jpg"
   };
 
   return (

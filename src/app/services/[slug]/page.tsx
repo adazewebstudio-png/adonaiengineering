@@ -22,6 +22,9 @@ export async function generateMetadata(props: { params: Promise<{ slug: string }
         return {
             title: post.metadata.title,
             description: post.metadata.description,
+            alternates: {
+                canonical: `/services/${params.slug}`,
+            },
         }
     } catch (e) {
         return { title: 'Service Not Found' }
@@ -161,8 +164,8 @@ export default async function ServicePage(props: { params: Promise<{ slug: strin
             "provider": {
                 "@type": "ConstructionBusiness",
                 "name": "Adonai Engineering and Construction Ltd",
-                "url": "https://adonai-engineering.com",
-                "logo": "https://adonai-engineering.com/logo.jpg"
+                "url": "https://adonaiengineeringltd.com",
+                "logo": "https://adonaiengineeringltd.com/logo.jpg"
             },
             "description": metadata.description
         };

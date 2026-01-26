@@ -36,6 +36,9 @@ export async function generateMetadata({ params }: PageProps) {
     return {
         title: post.title,
         description: post.excerpt,
+        alternates: {
+            canonical: `/insights/${slug}`,
+        },
     };
 }
 

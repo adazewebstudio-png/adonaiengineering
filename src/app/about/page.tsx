@@ -18,10 +18,10 @@ export default function AboutPage() {
         "mainEntity": {
             "@type": "Organization",
             "name": "Adonai Engineering and Construction Ltd",
-            "url": "https://adonai-engineering.com",
+            "url": "https://adonaiengineeringltd.com",
             "foundingDate": "2021",
             "description": "Independent engineering and construction firm executing projects directly since 2021.",
-            "logo": "https://adonai-engineering.com/logo.jpg",
+            "logo": "https://adonaiengineeringltd.com/logo.jpg",
             "founder": {
                 "@type": "Person",
                 "name": "Rev. Dr. Bright Adonai",
@@ -181,7 +181,8 @@ export default function AboutPage() {
                             <div className="h-1.5 w-20 bg-primary mx-auto mt-6" />
                         </div>
 
-                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                        {/* Top Row: CEO and Technical Director */}
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto mb-8">
                             {[
                                 {
                                     name: "Rev. Dr. Bright Adonai",
@@ -190,19 +191,58 @@ export default function AboutPage() {
                                     bio: "Directs the overall strategic trajectory and corporate governance of Adonai Engineering, bringing multidisciplinary leadership to the construction sector."
                                 },
                                 {
-                                    name: "Technical Director",
-                                    role: "Lead Engineer",
+                                    name: "Engr. Alfred Adadzie",
+                                    role: "Technical Director",
+                                    image: "/images/about/alfred-adadzie.jpg",
                                     bio: "Oversees technical integrity, engineering standards, and structural compliance across all project sites."
-                                },
+                                }
+                            ].map((manager, index) => (
+                                <div key={index} className="group h-full">
+                                    <div className="bg-zinc-100 dark:bg-zinc-900 rounded-sm border border-border p-8 h-full flex flex-col hover:border-primary transition-all duration-300">
+                                        <div className="relative h-24 w-24 rounded-full overflow-hidden mb-6 shrink-0 border-2 border-border group-hover:border-primary transition-colors bg-zinc-200 dark:bg-zinc-800">
+                                            {manager.image ? (
+                                                <Image
+                                                    src={manager.image}
+                                                    alt={manager.name}
+                                                    fill
+                                                    className="object-cover object-top"
+                                                />
+                                            ) : (
+                                                <div className="h-full w-full flex items-center justify-center">
+                                                    <Users className="h-10 w-10 text-zinc-400 group-hover:text-primary transition-colors" />
+                                                </div>
+                                            )}
+                                        </div>
+                                        <h3 className="text-xl font-bold uppercase tracking-tight mb-1">{manager.name}</h3>
+                                        <p className="text-xs font-bold uppercase tracking-widest text-primary mb-4">{manager.role}</p>
+                                        <p className="text-sm text-muted-foreground dark:text-white leading-relaxed flex-grow">
+                                            {manager.bio}
+                                        </p>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+
+                        {/* Bottom Row: Operations, Finance, and Marketing */}
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                            {[
                                 {
-                                    name: "Operations Manager",
-                                    role: "Head of Projects",
+                                    name: "Confidence Dogbatse",
+                                    role: "Operations Manager",
+                                    image: "/images/about/confidence-dogbatse.jpg",
                                     bio: "Drives execution discipline, coordinating site teams and managing project timelines and controls."
                                 },
                                 {
-                                    name: "Admin & Finance Manager",
-                                    role: "Corporate Services",
+                                    name: "Joseph Tsetse",
+                                    role: "Admin & Finance Manager",
+                                    image: "/images/about/joseph-tsetse.jpg",
                                     bio: "Ensures accountability through robust administrative systems, financial tracking, and reporting."
+                                },
+                                {
+                                    name: "Richard Adaze",
+                                    role: "Head of Marketing",
+                                    image: "/images/about/richard-adaze.jpg",
+                                    bio: "Leads brand strategy, client engagement, and market positioning to drive business growth and visibility."
                                 }
                             ].map((manager, index) => (
                                 <div key={index} className="group h-full">
