@@ -223,20 +223,14 @@ export default function AboutPage() {
                             ))}
                         </div>
 
-                        {/* Bottom Row: Operations, Finance, and Marketing */}
-                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        {/* Bottom Row: Operations and Marketing */}
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
                             {[
                                 {
                                     name: "Confidence Dogbatse",
                                     role: "Operations Manager",
                                     image: "/images/about/confidence-dogbatse.jpg",
                                     bio: "Drives execution discipline, coordinating site teams and managing project timelines and controls."
-                                },
-                                {
-                                    name: "Joseph Tsetse",
-                                    role: "Admin & Finance Manager",
-                                    image: "/images/about/joseph-tsetse.jpg",
-                                    bio: "Ensures accountability through robust administrative systems, financial tracking, and reporting."
                                 },
                                 {
                                     name: "Richard Adaze",
