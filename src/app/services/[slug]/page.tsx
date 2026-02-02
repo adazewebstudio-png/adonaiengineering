@@ -26,7 +26,7 @@ export async function generateMetadata(props: { params: Promise<{ slug: string }
                 canonical: `/services/${params.slug}`,
             },
         }
-    } catch (e) {
+    } catch (_e) {
         return { title: 'Service Not Found' }
     }
 }
@@ -154,7 +154,7 @@ export default async function ServicePage(props: { params: Promise<{ slug: strin
 
         const ServiceIcon = service.icon;
 
-        let schema: any = {
+        const schema: any = {
             "@context": "https://schema.org",
             "@type": "Service",
             "name": metadata.title,
@@ -307,7 +307,7 @@ export default async function ServicePage(props: { params: Promise<{ slug: strin
                 </div>
             </>
         );
-    } catch (error) {
+    } catch (_error) {
         notFound();
     }
 }

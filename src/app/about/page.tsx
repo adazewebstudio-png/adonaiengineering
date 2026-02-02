@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/Button";
 import { PageHeader } from "@/components/layout/PageHeader";
-import { Building2, Target, Eye, ShieldCheck, CheckCircle2, Users, Award, TrendingUp, MapPin } from "lucide-react";
+import { Building2, Target, Eye, ShieldCheck, CheckCircle2, Users, Award, TrendingUp } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 

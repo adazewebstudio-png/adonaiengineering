@@ -13,20 +13,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         priority: 0.8,
     }));
 
-    const capabilities = getAllPosts("capabilities").map((post) => ({
-        url: `${baseUrl}/capabilities/${post.slug}`,
-        lastModified: post.metadata.date ? new Date(post.metadata.date) : new Date(),
-        changeFrequency: 'monthly' as const,
-        priority: 0.7,
-    }));
-
-    const projects = getAllPosts("experience").map((post) => ({
-        url: `${baseUrl}/experience/${post.slug}`,
-        lastModified: post.metadata.date ? new Date(post.metadata.date) : new Date(),
-        changeFrequency: 'monthly' as const,
-        priority: 0.7,
-    }));
-
     // Fetch Insights from Sanity
     const sanityPosts = await client.fetch(groq`*[_type == "post"] {
         "slug": slug.current,
@@ -60,6 +46,5 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         changeFrequency: route.changeFrequency,
     }));
 
-    return [...staticRoutes, ...services, ...capabilities, ...projects, ...insights];
+    return [...staticRoutes, ...services, ...insights];
 }
-

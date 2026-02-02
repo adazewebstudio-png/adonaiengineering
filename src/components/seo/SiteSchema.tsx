@@ -41,7 +41,7 @@ export function SiteSchema() {
         "parentOrganization": {
             "@type": "Organization",
             "name": "Adonai Estate Limited",
-            "url": "https://adonai-engineering.com" // Update when group site is known
+            "url": "https://adonaiengineeringltd.com"
         },
         "hasOfferCatalog": {
             "@type": "OfferCatalog",
