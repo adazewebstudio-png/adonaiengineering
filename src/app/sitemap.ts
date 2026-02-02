@@ -1,7 +1,9 @@
 import { MetadataRoute } from 'next';
 import { getAllPosts } from '@/lib/mdx';
+import { client } from "@/sanity/lib/client";
+import { groq } from "next-sanity";
 
-export default function sitemap(): MetadataRoute.Sitemap {
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     const baseUrl = 'https://adonaiengineeringltd.com';
 
     const services = getAllPosts("services").map((post) => ({
@@ -25,9 +27,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
         priority: 0.7,
     }));
 
-    const insights = getAllPosts("insights").map((post) => ({
+    // Fetch Insights from Sanity
+    const sanityPosts = await client.fetch(groq`*[_type == "post"] {
+        "slug": slug.current,
+        publishedAt
+    }`);
+
+    const insights = sanityPosts.map((post: any) => ({
         url: `${baseUrl}/insights/${post.slug}`,
-        lastModified: post.metadata.date ? new Date(post.metadata.date) : new Date(),
+        lastModified: post.publishedAt ? new Date(post.publishedAt) : new Date(),
         changeFrequency: 'weekly' as const,
         priority: 0.6,
     }));
@@ -54,3 +62,4 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     return [...staticRoutes, ...services, ...capabilities, ...projects, ...insights];
 }
+
